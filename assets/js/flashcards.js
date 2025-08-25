@@ -14,6 +14,11 @@ $(document).ready(function() {
         showFlashcard();
     });
 
+    $('#prev-btn').click(function() {
+        currentIndex = (currentIndex - 1) % words.length;
+        showFlashcard();
+    });
+
     function showFlashcard() {
         const word = words[currentIndex];
         $('#flashcard').text(word);
