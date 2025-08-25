@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+h1 {
+    margin-top: 20px;
+}
+#letter-container button {
+    margin: 5px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#flashcard-container {
+    margin-top: 50px;
+}
+#flashcard {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff69b4;
+    padding: 50px;
+    border-radius: 20px;
+    animation: fadeIn 1s;
+}
+#next-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
