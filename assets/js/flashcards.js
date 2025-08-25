@@ -18,12 +18,16 @@ $(document).ready(function() {
         currentIndex = (currentIndex - 1) % words.length;
         showFlashcard();
     });
+	
+	$('#home-btn').click(function() {
+        window.location.href = `index.html`;
+    });
 
     function showFlashcard() {
         const word = words[currentIndex];
         $('#flashcard').text(word);
         $('#flashcard').css('background-color', getRandomColor());
-        playSound(word);
+        // playSound(word);
     }
 
     function getRandomColor() {
